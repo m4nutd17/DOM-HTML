@@ -1,0 +1,48 @@
+.container {
+    margin-top: 110px; 
+    margin-bottom: 100px; 
+    border: 1px solid #000; 
+    box-sizing: border-box;
+}
+
+.content{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.select-box select{
+    width: 300px;
+}
+
+.select-box select{
+    width: 300px;
+    position: relative;
+    height: 45px;
+    padding: 10px 15px;
+    line-height: 22px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.select-box::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -15px;
+    border-top: 8px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+input {
+    width: 100%;
+    position: relative;
+    height: 45px;
+    padding: 10px 15px;
+    line-height: 22px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
