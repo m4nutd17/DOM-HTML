@@ -11,42 +11,42 @@
     <title>Temperature Converter</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body id="body">
 
     <!-- Temperature Converter  -->
     <div class="container-fluid">
-      <div class="temp container">
+      <div class="temp container" style="background-color: #fff;">
         <h2 style="text-align: center; margin-top: 20px;">TEMPERATURE CONVERTER</h2>
           <div class="content">
-            <p style="font-size: 20px;">xx Celcius equals with</p>
-            <p style="font-size: 36px;"><strong>xx Reamur</strong></p>
-            <p style="font-size: 20px;">Realtime Date</p>
+            <p style="font-size: 20px;"><span id="angkaInput">1</span><sup>o</sup> <span id="tampilSatuanInput">Celcius</span> equals with</p>
+            <p style="font-size: 36px;"><strong><span id="angkaOutput"><span id="angkaOutput">0.8</span></span><sup>o</sup> <span id="tampilSatuanOutput">Reamur</span></strong></p>
+            <p id="timeTemp" style="font-size: 20px;"></p>
             <!--Input Value Temperature-->
             <div class="row" style="margin-bottom: 20px;">
               <p style="font-size: 16px;">Input value here:</p>
               <div class="input-text col-5">
-                <input>
+                <input id="masukkanSuhu">
               </div>
               <div class="select-box col-5">
-                <select>
-                  <option>Celcius</option>
-                  <option>Reamur</option>
-                  <option>Fahrenheit</option>
-                  <option>Kelvin</option>
+                <select id="suhuInput">
+                  <option value="Celcius">Celcius</option>
+                  <option value="Reamur">Reamur</option>
+                  <option value="Fahrenheit">Fahrenheit</option>
+                  <option value="Kelvin">Kelvin</option>
                 </select>
               </div>
             </div>
             <!--Output Value-->
             <div class="row">
               <div class="input-text col-5">
-                <input style="background-color: #F5F5F5;">
+                <p id="hasilSuhu" class="output-suhu">0<sup>o</sup></p>
               </div>
               <div class="select-box col-5">
-                <select>
-                  <option>Reamur</option>
-                  <option>Celcius</option>
-                  <option>Fahrenheit</option>
-                  <option>Kelvin</option>
+                <select id="suhuOutput">
+                  <option value="Reamur">Reamur</option>
+                  <option value="Celcius">Celcius</option>
+                  <option value="Fahrenheit">Fahrenheit</option>
+                  <option value="Kelvin">Kelvin</option>
                 </select>
               </div>
             </div>
@@ -55,13 +55,14 @@
     </div>
 
     <div class="containter-fluid">
-      <div class="back-color container">
+      <div class="back-color container" style="background-color: #fff;">
         <h2 style="text-align: center; margin-top: 20px;">CHANGE BACKGROUND COLOR</h2>
         <div class="content">
           <p style="font-size: 20px;">Change background color to</p>
-          <p style="font-size: 36px;"><strong>#fff</strong></p>
-          <p style="font-size: 20px;">Realtime Date</p>
-          <input>
+          <p id="tampilWarna" style="font-size: 36px;"><strong>#fff</strong></p>
+          <p id="timeColor" style="font-size: 20px;"></p>
+          <input id="txtNama">
+          <button id="btnWarna" type="button" class="btn btn-success" style="margin-top: 20px;">SUBMIT</button>
         </div>
       </div>
     </div>
